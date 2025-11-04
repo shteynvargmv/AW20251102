@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "ffd707e1-29d9-49ec-b52c-adae9011943d",
+		"name": "Coins",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49540025",
+		"_collection_link": "https://parfen-marina-9786152.postman.co/workspace/Marina's-Workspace~d1a7fa7c-57cb-4d09-8448-3d8995282019/collection/49540025-ffd707e1-29d9-49ec-b52c-adae9011943d?action=share&source=collection_link&creator=49540025"
+	},
+	"item": [
+		{
+			"name": "Price",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/crypto/price?ids=bitcoin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"crypto",
+						"price"
+					],
+					"query": [
+						{
+							"key": "ids",
+							"value": "bitcoin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/crypto/top?limit=10",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"crypto",
+						"top"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/crypto/search?query=bitcoin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"crypto",
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "bitcoin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Compare",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/crypto/compare?ids=cardano,bitcoin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"crypto",
+						"compare"
+					],
+					"query": [
+						{
+							"key": "ids",
+							"value": "cardano,bitcoin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stats",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/crypto/cache/stats",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"crypto",
+						"cache",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clear",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/crypto/cache/clear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"crypto",
+						"cache",
+						"clear"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

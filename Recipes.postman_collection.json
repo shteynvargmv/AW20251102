@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "a4b001e9-dd0c-4cff-b1d0-a5c100191727",
+		"name": "Recipes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49540025",
+		"_collection_link": "https://parfen-marina-9786152.postman.co/workspace/Marina's-Workspace~d1a7fa7c-57cb-4d09-8448-3d8995282019/collection/49540025-a4b001e9-dd0c-4cff-b1d0-a5c100191727?action=share&source=collection_link&creator=49540025"
+	},
+	"item": [
+		{
+			"name": "Search",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/recipes/search?query=pasta&number=10",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recipes",
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "pasta"
+						},
+						{
+							"key": "number",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ByIngredients",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/recipes/by-ingredients?ingredients=rice,chicken&number=5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recipes",
+						"by-ingredients"
+					],
+					"query": [
+						{
+							"key": "ingredients",
+							"value": "rice,chicken"
+						},
+						{
+							"key": "number",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/recipes/715538",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recipes",
+						"715538"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Random",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/recipes/random?number=3&tags=dessert,vegetarian",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recipes",
+						"random"
+					],
+					"query": [
+						{
+							"key": "number",
+							"value": "3"
+						},
+						{
+							"key": "tags",
+							"value": "dessert,vegetarian"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stats",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/recipes/cache/stats",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recipes",
+						"cache",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clear",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/recipes/cache/clear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"recipes",
+						"cache",
+						"clear"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

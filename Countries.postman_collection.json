@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "f45b371a-94e7-4028-88fe-57b0a61d1074",
+		"name": "Countries",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49540025",
+		"_collection_link": "https://parfen-marina-9786152.postman.co/workspace/Marina's-Workspace~d1a7fa7c-57cb-4d09-8448-3d8995282019/collection/49540025-f45b371a-94e7-4028-88fe-57b0a61d1074?action=share&source=collection_link&creator=49540025"
+	},
+	"item": [
+		{
+			"name": "Stats",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/countries/cache/stats",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"countries",
+						"cache",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Name&Population",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/countries/usa/population?min=45&max=500000000",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"countries",
+						"usa",
+						"population"
+					],
+					"query": [
+						{
+							"key": "min",
+							"value": "45"
+						},
+						{
+							"key": "max",
+							"value": "500000000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/countries/search?name=usa",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"countries",
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "usa"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Region",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/countries/region?name=asia",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"countries",
+						"region"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "asia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stats",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/countries/cache/stats",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"countries",
+						"cache",
+						"stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clear",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/countries/cache/clear",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"countries",
+						"cache",
+						"clear"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
